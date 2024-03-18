@@ -13,7 +13,7 @@ moment.tz.setDefault(localTimezone);
 const params = yargs.argv;
 
 if (process.argv.length < 3) {
-  console.log('Usage: node <script-file> <timezone>');
+  console.log('Usage: node tz <timezone> [--format]');
   process.exit(1);
 }
 const targetTimezone = process.argv[2];
